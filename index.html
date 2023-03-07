@@ -9,11 +9,13 @@
                 margin:auto;
                 text-align:center;
             }
+            #yigayi{
+                display:none;
+            }
         </style>
     </head>
     <body>
         <h1> LOL MMR 계산기</h1>
-
         <form>
             <select name="region" class="input">
                 <option value="none" selected>===Your Region===</option>
@@ -24,9 +26,11 @@
             YOUR SUMMONOR NAME:<input type="text" label="YOUR Summoner name" class="input"> 
             <button id="nameinput" onclick="nameinput_click()">입력</button>
         </div>
+        <div id="yigayi"><img src="WEB1.jpg"></div>
         <script>
             function nameinput_click() {
                 alert("마금느")
+                document.getElementById('yigayi').style.display = "block";
             }
         </script>
     </body>
